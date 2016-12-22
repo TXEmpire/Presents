@@ -1,0 +1,11 @@
+name: FlashChristmas
+author: flash1110
+version: 1.0
+main: me.flash1110.christmas.FlashChristmas
+description: Present for Cowsook 
+
+commands:
+  present:
+    description: La command
+  present2:
+    description: Present command
