@@ -1,16 +1,11 @@
 package me.flash1110.christmas;
 
-import java.io.PrintStream;
 import java.util.List;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
-import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.configuration.file.FileConfigurationOptions;
 import org.bukkit.entity.Player;
-import org.bukkit.inventory.PlayerInventory;
-import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class FlashChristmas
@@ -18,13 +13,13 @@ public class FlashChristmas
 {
   public void onDisable()
   {
-    System.out.println("[FlashChristmas] FlashChristmas v" + 
+    System.out.println("[FlashPresent] FlashPresent v" + 
       getDescription().getVersion() + " disabled!");
   }
   
   public void onEnable()
   {
-    System.out.println("[FlashChristmas] FlashChristmas v" + 
+    System.out.println("[FlashPresent] FlashPresent v" + 
       getDescription().getVersion() + " enabled!");
     
     loadConfiguration();
@@ -181,12 +176,12 @@ public class FlashChristmas
         if (first.equalsIgnoreCase("removeextra"))
         {
           truee = true;
-          if (sender.hasPermission("Flashchristmas.admin"))
+          if (sender.hasPermission("flashpresent.admin"))
           {
             String second = args[1];
             
             System.out
-              .println("[FlashChristmas] Attempting to remove extra presents from player " + 
+              .println("[FlashPresent] Attempting to remove extra presents from player " + 
               second);
             if (getConfig().contains("Player." + second.toLowerCase()))
             {
@@ -241,12 +236,12 @@ public class FlashChristmas
         if (first.equalsIgnoreCase("addextra"))
         {
           truee = true;
-          if (sender.hasPermission("Flashchristmas.admin"))
+          if (sender.hasPermission("flashpresent.admin"))
           {
             String second = args[1];
             
             System.out
-              .println("[FlashChristmas] Attemtping to add extra presents to player " + 
+              .println("[FlashPresent] Attemtping to add extra presents to player " + 
               second);
             if (getConfig().contains("Player." + second.toLowerCase()))
             {
@@ -299,7 +294,7 @@ public class FlashChristmas
         if (first.equalsIgnoreCase("set"))
         {
           truee = true;
-          if (sender.hasPermission("Flashchristmas.admin"))
+          if (sender.hasPermission("flashpresent.admin"))
           {
             String second = args[1];
             if (getConfig().contains("Player." + second.toLowerCase()))
@@ -355,7 +350,7 @@ public class FlashChristmas
         {
           sender.sendMessage("§6Open a present with §a/present open");
           sender.sendMessage("§6View info with §a/present info <player> <pagenumber>");
-          if (player.hasPermission("Flashchristmas.admin"))
+          if (player.hasPermission("flashpresent.admin"))
           {
             sender.sendMessage("§6Add §bextra§6 with §a/present addextra <p> <#>");
             sender.sendMessage("§6Remove §bextra§6 with §a/present removeextra <p> <#>");
@@ -367,7 +362,7 @@ public class FlashChristmas
           String first = args[0];
           if ((first.equalsIgnoreCase("open")) || (first.equalsIgnoreCase("claim")))
           {
-            if (player.hasPermission("Flashchristmas.open"))
+            if (player.hasPermission("flashpresent.open"))
             {
               if (getConfig().contains("Player." + player.getName().toLowerCase() + ".used"))
               {

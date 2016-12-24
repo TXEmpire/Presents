@@ -14,11 +14,11 @@ public class CreatePresent
   public static void GivePresent(FlashChristmas plugin, Player player, Integer max, Integer current, Integer extra)
   {
     int STARTpick = 1;
-    int ENDpick = 141;
+    int ENDpick = 150;
     Random randompick = new Random();
     long rangepick = ENDpick - STARTpick + 1L;
     
-    long fractionpick = (rangepick * randompick.nextDouble());
+    long fractionpick = (long) (rangepick * randompick.nextDouble());
     int randomNumberpick = (int)(fractionpick + STARTpick);
     
     int itemid = 1;
@@ -157,25 +157,25 @@ public class CreatePresent
     if (randomNumberpick == 18)
     {
       itemid = 41;
-      ENDpick1 = 16;
+      ENDpick1 = 3;
       itemname = "Gold Block";
     }
     if (randomNumberpick == 19)
     {
       itemid = 42;
-      ENDpick1 = 16;
+      ENDpick1 = 5;
       itemname = "Iron Block";
     }
     if (randomNumberpick == 20)
     {
       itemid = 46;
-      ENDpick1 = 32;
+      ENDpick1 = 16;
       itemname = "TNT";
     }
     if (randomNumberpick == 21)
     {
       itemid = 47;
-      ENDpick1 = 64;
+      ENDpick1 = 32;
       itemname = "Bookshelf";
     }
     if (randomNumberpick == 22)
@@ -187,13 +187,13 @@ public class CreatePresent
     if (randomNumberpick == 23)
     {
       itemid = 49;
-      ENDpick1 = 64;
+      ENDpick1 = 12;
       itemname = "Obsidian";
     }
     if (randomNumberpick == 24)
     {
       itemid = 57;
-      ENDpick1 = 16;
+      ENDpick1 = 1;
       itemname = "Diamond Block";
     }
     if (randomNumberpick == 25)
@@ -229,19 +229,19 @@ public class CreatePresent
     if (randomNumberpick == 30)
     {
       itemid = 103;
-      ENDpick1 = 64;
+      ENDpick1 = 48;
       itemname = "Melon Block";
     }
     if (randomNumberpick == 31)
     {
       itemid = 116;
-      ENDpick1 = 16;
+      ENDpick1 = 5;
       itemname = "Enchantment Table";
     }
     if (randomNumberpick == 32)
     {
       itemid = 133;
-      ENDpick1 = 16;
+      ENDpick1 = 2;
       itemname = "Emerald Block";
     }
     if (randomNumberpick == 33)
@@ -285,7 +285,7 @@ public class CreatePresent
       enchant1level = 3;
       enchant2 = "silktouch";
       enchant2level = 1;
-      itemname = "Iron Pick §4(§aDura§7-§eIII§6|§aSilkTouch§7-§dIII§4)";
+      itemname = "Iron Pick §4(§aDura§7-§eIII§6|§aSilkTouch§7-§dI§4)";
     }
     if (randomNumberpick == 38)
     {
@@ -326,18 +326,18 @@ public class CreatePresent
       itemid = 261;
       ENDpick1 = 1;
       enchant1 = "power";
-      enchant1level = 4;
+      enchant1level = 2;
       enchant2 = "flame";
       enchant2level = 1;
-      itemname = "Bow §4(§aPOwer§7-§dIV§6|§aFlame§7-§dI§4)";
+      itemname = "Bow §4(§aPOwer§7-§dII§6|§aFlame§7-§dI§4)";
     }
     if (randomNumberpick == 43)
     {
       itemid = 261;
       ENDpick1 = 1;
       enchant1 = "power";
-      enchant1level = 4;
-      itemname = "Bow §4(§aInfinity§7-§dIV§6|§aFlame§7-§dI§4)";
+      enchant1level = 1;
+      itemname = "Bow §4(§aInfinity§7-§dI§6|§aFlame§7-§dI§4)";
     }
     if (randomNumberpick == 44)
     {
@@ -352,7 +352,7 @@ public class CreatePresent
     if (randomNumberpick == 45)
     {
       itemid = 264;
-      ENDpick1 = 24;
+      ENDpick1 = 19;
       itemname = "Diamond";
     }
     if (randomNumberpick == 46)
@@ -364,7 +364,7 @@ public class CreatePresent
     if (randomNumberpick == 47)
     {
       itemid = 266;
-      ENDpick1 = 48;
+      ENDpick1 = 32;
       itemname = "Gold Ingot";
     }
     if (randomNumberpick == 48)
@@ -372,54 +372,54 @@ public class CreatePresent
       itemid = 267;
       ENDpick1 = 1;
       enchant1 = "sharp";
-      enchant1level = 4;
+      enchant1level = 2;
       enchant2 = "fire";
       enchant2level = 2;
-      itemname = "Iron Sword §4(§aSharp§7-§dIV§6|§aFire§7-§dII§4)";
+      itemname = "Iron Sword §4(§aSharp§7-§dII§6|§aFire§7-§dII§4)";
     }
     if (randomNumberpick == 49)
     {
       itemid = 267;
       ENDpick1 = 1;
       enchant1 = "sharp";
-      enchant1level = 2;
+      enchant1level = 1;
       enchant2 = "fire";
       enchant2level = 2;
       enchant3 = "knockback";
       enchant3level = 2;
-      itemname = "Iron Sword §4(§aSharp§7-§dII§6|§aFire§7-§dII§6|§aKB§7-§dII§4)";
+      itemname = "Iron Sword §4(§aSharp§7-§dI§6|§aFire§7-§dII§6|§aKB§7-§dII§4)";
     }
     if (randomNumberpick == 50)
     {
       itemid = 276;
       ENDpick1 = 1;
       enchant1 = "sharp";
-      enchant1level = 5;
-      itemname = "Diamond Sword §4(§aSharp§7-§dV§4)";
+      enchant1level = 1;
+      itemname = "Diamond Sword §4(§aSharp§7-§dI§4)";
     }
     if (randomNumberpick == 51)
     {
       itemid = 276;
       ENDpick1 = 1;
       enchant1 = "sharp";
-      enchant1level = 3;
+      enchant1level = 1;
       enchant2 = "fire";
       enchant2level = 2;
       enchant2 = "knockback";
       enchant2level = 2;
-      itemname = "Diamond Sword §4(§aSharp§7-§dIII§6|§aFire§7-§dII§6|§aKB§7-§dII§4)";
+      itemname = "Diamond Sword §4(§aSharp§7-§dI§6|§aFire§7-§dII§6|§aKB§7-§dII§4)";
     }
     if (randomNumberpick == 52)
     {
       itemid = 276;
       ENDpick1 = 1;
       enchant1 = "sharp";
-      enchant1level = 4;
+      enchant1level = 1;
       enchant2 = "fire";
       enchant2level = 2;
       enchant2 = "knockback";
       enchant2level = 2;
-      itemname = "Diamond Sword §4(§aSharp§7-§dIV§6|§aFire§7-§dII§6|§aKB§7-§dII§4)";
+      itemname = "Diamond Sword §4(§aSharp§7-§dI§6|§aFire§7-§dII§6|§aKB§7-§dII§4)";
     }
     if (randomNumberpick == 53)
     {
@@ -472,20 +472,20 @@ public class CreatePresent
       itemid = 283;
       ENDpick1 = 1;
       enchant1 = "sharp";
-      enchant1level = 5;
+      enchant1level = 3;
       enchant2 = "fire";
       enchant2level = 2;
-      itemname = "Gold Sword §4(§aSharp§7-§dV§6|§aFire§7-§dII§4)";
+      itemname = "Gold Sword §4(§aSharp§7-§dIII§6|§aFire§7-§dII§4)";
     }
     if (randomNumberpick == 59)
     {
       itemid = 283;
       ENDpick1 = 1;
       enchant1 = "sharp";
-      enchant1level = 5;
+      enchant1level = 3;
       enchant2 = "knockback";
       enchant2level = 2;
-      itemname = "Gold Sword §4(§aSharp§7-§dV§6|§aKB§7-§dII§4)";
+      itemname = "Gold Sword §4(§aSharp§7-§dIII§6|§aKB§7-§dII§4)";
     }
     if (randomNumberpick == 60)
     {
@@ -510,136 +510,134 @@ public class CreatePresent
       itemid = 302;
       ENDpick1 = 1;
       enchant1 = "prot";
-      enchant1level = 4;
-      itemname = "Chainmail Helmet §4(§aProt§7-§dIV§4)";
+      enchant1level = 1;
+      itemname = "Chainmail Helmet §4(§aProt§7-§dI§4)";
     }
     if (randomNumberpick == 64)
     {
       itemid = 303;
       ENDpick1 = 1;
       enchant1 = "prot";
-      enchant1level = 4;
-      itemname = "Chainmail Chestplate §4(§aProt§7-§dIV§4)";
+      enchant1level = 1;
+      itemname = "Chainmail Chestplate §4(§aProt§7-§dI§4)";
     }
     if (randomNumberpick == 65)
     {
       itemid = 304;
       ENDpick1 = 1;
       enchant1 = "prot";
-      enchant1level = 4;
-      itemname = "Chainmail Leggings §4(§aProt§7-§dIV§4)";
+      enchant1level = 1;
+      itemname = "Chainmail Leggings §4(§aProt§7-§dI§4)";
     }
     if (randomNumberpick == 66)
     {
       itemid = 305;
       ENDpick1 = 1;
       enchant1 = "prot";
-      enchant1level = 4;
-      itemname = "Chainmail Boots §4(§aProt§7-§dIV§4)";
+      enchant1level = 1;
+      itemname = "Chainmail Boots §4(§aProt§7-§dI§4)";
     }
     if (randomNumberpick == 67)
     {
       itemid = 306;
       ENDpick1 = 1;
       enchant1 = "prot";
-      enchant1level = 4;
-      itemname = "Iron Helmet §4(§aProt§7-§dIV§4)";
+      enchant1level = 2;
+      itemname = "Iron Helmet §4(§aProt§7-§dII§4)";
     }
     if (randomNumberpick == 68)
     {
       itemid = 307;
       ENDpick1 = 1;
       enchant1 = "prot";
-      enchant1level = 4;
-      itemname = "Iron Chestplate §4(§aProt§7-§dIV§4)";
+      enchant1level = 1;
+      itemname = "Iron Chestplate §4(§aProt§7-§dI§4)";
     }
     if (randomNumberpick == 69)
     {
       itemid = 308;
       ENDpick1 = 1;
       enchant1 = "prot";
-      enchant1level = 4;
-      itemname = "Iron Leggings §4(§aProt§7-§dIV§4)";
+      enchant1level = 1;
+      itemname = "Iron Leggings §4(§aProt§7-§dI§4)";
     }
     if (randomNumberpick == 70)
     {
       itemid = 309;
       ENDpick1 = 1;
       enchant1 = "prot";
-      enchant1level = 4;
-      itemname = "Iron Boots §4(§aProt§7-§dIV§4)";
+      enchant1level = 2;
+      itemname = "Iron Boots §4(§aProt§7-§dII§4)";
     }
     if (randomNumberpick == 71)
     {
       itemid = 310;
       ENDpick1 = 1;
       enchant1 = "prot";
-      enchant1level = 4;
-      itemname = "Diamond Helmet §4(§aProt§7-§dIV§4)";
+      enchant1level = 1;
+      itemname = "Diamond Helmet §4(§aProt§7-§dI§4)";
     }
     if (randomNumberpick == 72)
     {
       itemid = 311;
       ENDpick1 = 1;
-      enchant1 = "prot";
-      enchant1level = 4;
-      itemname = "Diamond Chestplate §4(§aProt§7-§dIV§4)";
+      itemname = "Diamond Chestplate";
     }
     if (randomNumberpick == 73)
     {
       itemid = 312;
       ENDpick1 = 1;
       enchant1 = "prot";
-      enchant1level = 4;
-      itemname = "Diamond Leggings §4(§aProt§7-§dIV§4)";
+      enchant1level = 2;
+      itemname = "Diamond Leggings §4(§aProt§7-§dII§4)";
     }
     if (randomNumberpick == 74)
     {
       itemid = 313;
       ENDpick1 = 1;
       enchant1 = "prot";
-      enchant1level = 4;
-      itemname = "Diamond Boots §4(§aProt§7-§dIV§4)";
+      enchant1level = 1;
+      itemname = "Diamond Boots §4(§aProt§7-§dI§4)";
     }
     if (randomNumberpick == 75)
     {
       itemid = 314;
       ENDpick1 = 1;
       enchant1 = "prot";
-      enchant1level = 4;
+      enchant1level = 2;
       enchant2 = "fireprot";
       enchant2level = 4;
-      itemname = "Gold Helmet §4(§aProt§7-§dIV§6|§aFireProt§7-§dIV§4)";
+      itemname = "Gold Helmet §4(§aProt§7-§dII§6|§aFireProt§7-§dIV§4)";
     }
     if (randomNumberpick == 76)
     {
       itemid = 315;
       ENDpick1 = 1;
       enchant1 = "prot";
-      enchant1level = 4;
+      enchant1level = 1;
       enchant2 = "fireprot";
       enchant2level = 4;
-      itemname = "Gold Chestplate §4(§aProt§7-§dIV§6|§aFireProt§7-§dIV§4)";
+      itemname = "Gold Chestplate §4(§aProt§7-§dI§6|§aFireProt§7-§dIV§4)";
     }
     if (randomNumberpick == 77)
     {
       itemid = 316;
       ENDpick1 = 1;
       enchant1 = "prot";
-      enchant1level = 4;
+      enchant1level = 2;
       enchant2 = "fireprot";
       enchant2level = 4;
-      itemname = "Gold Leggings §4(§aProt§7-§dIV§6|§aFireProt§7-§dIV§4)";
+      itemname = "Gold Leggings §4(§aProt§7-§dII§6|§aFireProt§7-§dIV§4)";
     }
     if (randomNumberpick == 78)
     {
       itemid = 317;
       ENDpick1 = 1;
       enchant1 = "prot";
-      enchant1level = 4;
+      enchant1level = 1;
       enchant2 = "fireprot";
       enchant2level = 4;
-      itemname = "Gold Boots §4(§aProt§7-§dIV§6|§aFireProt§7-§dIV§4)";
+      itemname = "Gold Boots §4(§aProt§7-§dI§6|§aFireProt§7-§dIV§4)";
     }
     if (randomNumberpick == 79)
     {
@@ -650,26 +648,25 @@ public class CreatePresent
     if (randomNumberpick == 80)
     {
       itemid = 322;
-      ENDpick1 = 32;
+      ENDpick1 = 2;
       itemname = "Golden Apple";
     }
     if (randomNumberpick == 81)
     {
-      itemid = 322;
-      subid = 1;
-      ENDpick1 = 16;
-      itemname = "Enchanted Golden Apple";
+      itemid = 419;
+      ENDpick1 = 4;
+      itemname = "Diamond Horse Armor";
     }
     if (randomNumberpick == 82)
     {
       itemid = 326;
-      ENDpick1 = 32;
+      ENDpick1 = 16;
       itemname = "Water Bucket";
     }
     if (randomNumberpick == 83)
     {
       itemid = 327;
-      ENDpick1 = 32;
+      ENDpick1 = 16;
       itemname = "Lava Bucket";
     }
     if (randomNumberpick == 84)
@@ -699,7 +696,7 @@ public class CreatePresent
     if (randomNumberpick == 88)
     {
       itemid = 341;
-      ENDpick1 = 64;
+      ENDpick1 = 19;
       itemname = "Slime Ball";
     }
     if (randomNumberpick == 89)
@@ -723,7 +720,7 @@ public class CreatePresent
     if (randomNumberpick == 92)
     {
       itemid = 368;
-      ENDpick1 = 64;
+      ENDpick1 = 48;
       itemname = "Enderpearl";
     }
     if (randomNumberpick == 93)
@@ -735,169 +732,169 @@ public class CreatePresent
     if (randomNumberpick == 94)
     {
       itemid = 370;
-      ENDpick1 = 64;
+      ENDpick1 = 4;
       itemname = "Ghast Tear";
     }
     if (randomNumberpick == 95)
     {
       itemid = 372;
-      ENDpick1 = 64;
+      ENDpick1 = 20;
       itemname = "Nether Wart";
     }
     if (randomNumberpick == 96)
     {
       itemid = 378;
-      ENDpick1 = 64;
+      ENDpick1 = 32;
       itemname = "Magma Cream";
     }
     if (randomNumberpick == 97)
     {
       itemid = 382;
-      ENDpick1 = 64;
+      ENDpick1 = 32;
       itemname = "Glistening Melon";
     }
     if (randomNumberpick == 98)
     {
       itemid = 383;
       subid = 50;
-      ENDpick1 = 32;
+      ENDpick1 = 3;
       itemname = "Creeper Spawn Egg";
     }
     if (randomNumberpick == 99)
     {
       itemid = 383;
       subid = 51;
-      ENDpick1 = 32;
+      ENDpick1 = 2;
       itemname = "Skeleton Spawn Egg";
     }
     if (randomNumberpick == 100)
     {
       itemid = 383;
       subid = 52;
-      ENDpick1 = 32;
+      ENDpick1 = 5;
       itemname = "Spider Spawn Egg";
     }
     if (randomNumberpick == 101)
     {
       itemid = 383;
       subid = 54;
-      ENDpick1 = 32;
+      ENDpick1 = 5;
       itemname = "Zombie Spawn Egg";
     }
     if (randomNumberpick == 102)
     {
       itemid = 383;
       subid = 55;
-      ENDpick1 = 32;
+      ENDpick1 = 2;
       itemname = "Slime Spawn Egg";
     }
     if (randomNumberpick == 103)
     {
       itemid = 383;
       subid = 57;
-      ENDpick1 = 32;
+      ENDpick1 = 4;
       itemname = "Pigman Spawn Egg";
     }
     if (randomNumberpick == 104)
     {
       itemid = 383;
       subid = 59;
-      ENDpick1 = 32;
+      ENDpick1 = 10;
       itemname = "Cave Spider Spawn Egg";
     }
     if (randomNumberpick == 105)
     {
       itemid = 383;
       subid = 65;
-      ENDpick1 = 32;
+      ENDpick1 = 10;
       itemname = "Bat Spawn Egg";
     }
     if (randomNumberpick == 106)
     {
       itemid = 383;
       subid = 66;
-      ENDpick1 = 32;
+      ENDpick1 = 8;
       itemname = "Witch Spawn Egg";
     }
     if (randomNumberpick == 107)
     {
       itemid = 383;
       subid = 90;
-      ENDpick1 = 32;
+      ENDpick1 = 3;
       itemname = "Pig Spawn Egg";
     }
     if (randomNumberpick == 108)
     {
       itemid = 383;
       subid = 91;
-      ENDpick1 = 32;
+      ENDpick1 = 20;
       itemname = "Sheep Spawn Egg";
     }
     if (randomNumberpick == 109)
     {
       itemid = 383;
       subid = 92;
-      ENDpick1 = 32;
+      ENDpick1 = 10;
       itemname = "Cow Spawn Egg";
     }
     if (randomNumberpick == 110)
     {
       itemid = 383;
       subid = 93;
-      ENDpick1 = 32;
+      ENDpick1 = 3;
       itemname = "Chicken Spawn Egg";
     }
     if (randomNumberpick == 111)
     {
       itemid = 383;
       subid = 94;
-      ENDpick1 = 32;
+      ENDpick1 = 5;
       itemname = "Squid Spawn Egg";
     }
     if (randomNumberpick == 112)
     {
       itemid = 383;
       subid = 95;
-      ENDpick1 = 32;
+      ENDpick1 = 5;
       itemname = "Wolf Spawn Egg";
     }
     if (randomNumberpick == 113)
     {
       itemid = 383;
       subid = 96;
-      ENDpick1 = 32;
+      ENDpick1 = 5;
       itemname = "Mooshroom Spawn Egg";
     }
     if (randomNumberpick == 114)
     {
       itemid = 383;
       subid = 98;
-      ENDpick1 = 32;
+      ENDpick1 = 5;
       itemname = "Ocelot Spawn Egg";
     }
     if (randomNumberpick == 115)
     {
       itemid = 383;
       subid = 120;
-      ENDpick1 = 32;
+      ENDpick1 = 2;
       itemname = "Villager Spawn Egg";
     }
     if (randomNumberpick == 116)
     {
       itemid = 384;
-      ENDpick1 = 64;
+      ENDpick1 = 120;
       itemname = "Exp Bottle";
     }
     if (randomNumberpick == 117)
     {
       itemid = 388;
-      ENDpick1 = 32;
+      ENDpick1 = 20;
       itemname = "Emerald";
     }
     if (randomNumberpick == 118)
     {
       itemid = 389;
-      ENDpick1 = 64;
+      ENDpick1 = 10;
       itemname = "Item Frame";
     }
     if (randomNumberpick == 119)
@@ -915,19 +912,19 @@ public class CreatePresent
     if (randomNumberpick == 121)
     {
       itemid = 396;
-      ENDpick1 = 32;
+      ENDpick1 = 22;
       itemname = "Golden Carrot";
     }
     if (randomNumberpick == 122)
     {
       itemid = 399;
-      ENDpick1 = 2;
+      ENDpick1 = 1;
       itemname = "Nether Star";
     }
     if (randomNumberpick == 123)
     {
       itemid = 2256;
-      ENDpick1 = 4;
+      ENDpick1 = 3;
       itemname = "Golden Disk";
     }
     if (randomNumberpick == 124)
@@ -998,9 +995,9 @@ public class CreatePresent
     }
     if (randomNumberpick == 135)
     {
-      itemid = 419;
-      ENDpick1 = 1;
-      itemname = "Diamond Horse Armor";
+      itemid = 145;
+      ENDpick1 = 5;
+      itemname = "Anvil";
     }
     if (randomNumberpick == 136)
     {
@@ -1016,33 +1013,96 @@ public class CreatePresent
     }
     if (randomNumberpick == 138)
     {
-      itemid = 90;
-      ENDpick1 = 4;
-      itemname = "Portal Block";
+      itemid = 26;
+      ENDpick1 = 1;
+      itemname = "Bed";
     }
     if (randomNumberpick == 139)
     {
-      itemid = 51;
+      itemid = 65;
       ENDpick1 = 8;
-      itemname = "Fire";
+      itemname = "Ladder";
     }
     if (randomNumberpick == 140)
     {
-      itemid = 52;
-      ENDpick1 = 2;
-      itemname = "Mob Spawner";
+      itemid = 385;
+      ENDpick1 = 5;
+      itemname = "Fire Charge";
     }
     if (randomNumberpick == 141)
     {
       itemid = 383;
       subid = 100;
-      ENDpick1 = 8;
+      ENDpick1 = 4;
       itemname = "Horse Spawn Egg";
     }
+    if (randomNumberpick == 142)
+    {
+      itemid = 159;
+      ENDpick1 = 64;
+      subid = 0;
+      itemname = "White Stained Clay";
+    }
+    if (randomNumberpick == 143)
+    {
+      itemid = 159;
+      ENDpick1 = 64;
+      subid = 1;
+      itemname = "Orange Stained Clay";
+    }
+    if (randomNumberpick == 144)
+    {
+    	itemid = 159;
+        ENDpick1 = 64;
+        subid = 2;
+        itemname = "Magenta Stained Clay";
+    }
+    if (randomNumberpick == 145)
+    {
+    	itemid = 159;
+        ENDpick1 = 64;
+        subid = 14;
+        itemname = "Red Stained Clay";
+    }
+    if (randomNumberpick == 146)
+    {
+      itemid = 159;
+      ENDpick1 = 64;
+      subid = 11;
+      itemname = "Blue Stained Clay";
+    }
+    if (randomNumberpick == 147)
+    {
+      itemid = 159;
+      ENDpick1 = 64;
+      subid = 4;
+      itemname = "Yellow Stained Clay";
+    }
+    if (randomNumberpick == 148)
+    {
+      itemid = 159;
+      ENDpick1 = 64;
+      subid = 5;
+      itemname = "Lime Stained Clay";
+    }
+    if (randomNumberpick == 149)
+    {
+      itemid = 159;
+      ENDpick1 = 64;
+      subid = 15;
+      itemname = "Black Stained Clay";
+    }
+    if (randomNumberpick == 150) {
+    	itemid = 263;
+    	ENDpick1 = 32;
+    	itemname = "Coal";
+    }
+    
+    
     Random randompick1 = new Random();
     long rangepick1 = ENDpick1 - STARTpick1 + 1L;
     
-    long fractionpick1 = (rangepick1 * randompick1.nextDouble());
+    long fractionpick1 = (long) (rangepick1 * randompick1.nextDouble());
     int randomNumberpick1 = (int)(fractionpick1 + STARTpick1);
     
     amount = randomNumberpick1;
