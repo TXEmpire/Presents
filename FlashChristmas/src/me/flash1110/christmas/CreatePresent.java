@@ -336,8 +336,10 @@ public class CreatePresent
       itemid = 261;
       ENDpick1 = 1;
       enchant1 = "power";
+      enchant1level = 2;
+      enchant1 = "infinty";
       enchant1level = 1;
-      itemname = "Bow §4(§aInfinity§7-§dI§6|§aFlame§7-§dI§4)";
+      itemname = "Bow §4(§aInfinity§7-§dI§6|§aPower§7-§dII§4)";
     }
     if (randomNumberpick == 44)
     {
