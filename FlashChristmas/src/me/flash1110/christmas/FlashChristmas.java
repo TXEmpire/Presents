@@ -372,7 +372,7 @@ public class FlashChristmas
                   .toLowerCase() + 
                   ".used");
                 
-                int maxallowed = 3;
+                int maxallowed = 1;
                 if (player.hasPermission("flash.rank.soldier")) {
                   maxallowed = 5;
                 }
@@ -437,7 +437,7 @@ public class FlashChristmas
                   .toLowerCase() + 
                   ".extra");
                 
-                int maxallowed = 3;
+                int maxallowed = 1;
                 if (player.hasPermission("flash.rank.soldier")) {
                   maxallowed = 5;
                 }

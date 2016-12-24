@@ -7,5 +7,4 @@ description: Present for Cowsook
 commands:
   present:
     description: La command
-  present2:
-    description: Present command
+    aliases: [presents, christmas, chanukah, hannukah]
