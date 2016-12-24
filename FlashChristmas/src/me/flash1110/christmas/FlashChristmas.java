@@ -412,9 +412,10 @@ public class FlashChristmas
                 else
                 {
                   player.sendMessage(ChatColor.RED + 
-                    "You have used your maxium amount of presents §7(" + 
+                    "You have used your maximum amount of presents §7(" + 
                     ChatColor.LIGHT_PURPLE + 
                     maxallowedandextra + "§7)");
+                  player.sendMessage(ChatColor.GOLD + "Donate for more at  http://donate.0tx.org");
                 }
               }
               else

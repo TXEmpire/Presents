@@ -1268,7 +1268,7 @@ public class CreatePresent
     
     player.sendMessage(" §6----------------------------------------------------");
     player.sendMessage(" ");
-    player.sendMessage("   §4Happy §6Christmas");
+    player.sendMessage("   §4Happy §6Holidays");
     player.sendMessage("   §bHave an amazing time :D");
     player.sendMessage("   §2From 0tx.org");
     player.sendMessage(" ");
