@@ -425,7 +425,7 @@ public class CreatePresent
     }
     if (randomNumberpick == 53)
     {
-      itemid = 277;
+      itemid = 278;
       ENDpick1 = 1;
       enchant1 = "dura";
       enchant1level = 3;
@@ -433,7 +433,7 @@ public class CreatePresent
     }
     if (randomNumberpick == 54)
     {
-      itemid = 277;
+      itemid = 278;
       ENDpick1 = 1;
       enchant1 = "dura";
       enchant1level = 2;
